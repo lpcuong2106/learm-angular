@@ -1,0 +1,11 @@
+<p [hidden]="showText">book works! 123</p>
+
+<button (click)="toggleForgot()">Togger</button>
+
+<input type="text" [(ngModel)]="name" #templateReferenceVariable />
+<p [class.cycle]="name.length % 2 === 0">My name is {{ name }}</p>
+<code [style.color]="name.length % 2 === 0 ? 'red' : 'black'">{{
+  templateReferenceVariable.value
+}}</code>
+
+<p [ngStyle]="{ color: 'red', fontSize: '20px' }">hihi tesst directive</p>
