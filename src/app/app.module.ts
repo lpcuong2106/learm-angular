@@ -7,13 +7,17 @@ import { WordComponent } from './word/word.component';
 import { BookComponent } from './book/book.component';
 import { FormsModule } from '@angular/forms';
 import { StructComponent } from './struct/struct.component';
+import { RoundPipe } from './round.pipe';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WordComponent,
     BookComponent,
-    StructComponent
+    StructComponent,
+    RoundPipe,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

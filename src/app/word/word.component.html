@@ -1,3 +1,7 @@
-<h3>Cuong herre hihi</h3>
-<h2 class="a">{{ en }}</h2>
-<a [href]="en">OKOK</a>
+<ng-container>
+  <h3>{{ name }} herre hihi</h3>
+  <h2 class="a">{{ en }}</h2>
+  <a [href]="en">OKOK</a>
+  <ng-content select=".card"></ng-content>
+  <p>{{ 1.4 | roundNum: false }}</p>
+</ng-container>
